@@ -4,11 +4,8 @@ services:
   n8n:
     image: docker.n8n.io/n8nio/n8n
     restart: always
-    # ports:
-    #   - "127.0.0.1:5678:5678"
-    networks:
-      frontend:
-        ipv4_address: 172.18.0.5
+    ports:
+      - "127.0.0.1:5678:5678"
     environment:
       - N8N_HOST=http://maava.portdex.local
       - N8N_PORT=5678
@@ -22,8 +19,4 @@ services:
 
 volumes:
   n8n_data:
-    external: true
-
-networks:
-  frontend:
     external: true
