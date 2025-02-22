@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DEPLOYMENT_NAME = 'n8n'
+        DEPLOYMENT_NAME = 'n8n-maava'
         DEPLOYMENT_DOMAIN = 'n8n.maava.org'
-        DEPLOYMENT_PORT = '5678'  // Optional
+        // DEPLOYMENT_PORT = '5678'  // Optional
     }
 
     stages {
