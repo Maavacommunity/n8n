@@ -7,11 +7,11 @@ services:
     ports:
       - "127.0.0.1:5678:5678"
     environment:
-      - N8N_HOST=http://maava.portdex.local
+      - N8N_HOST=https://n8n.maava.org
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
       - NODE_ENV=production
-      - WEBHOOK_URL=http://maava.portdex.local
+      - WEBHOOK_URL=https://n8n.maava.org
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
       # - N8N_SECURE_COOKIE=false
     volumes:
